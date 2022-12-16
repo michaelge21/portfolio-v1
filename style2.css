@@ -1,0 +1,193 @@
+:root {
+  --inbetween-yellow: rgb(255, 247, 0);
+  --inbetween-blue:rgb(60, 126, 206);
+  --wucypher-white: rgb(255, 255, 255);
+  --wucypher-orange: rgb(242, 152, 73);
+  --leader-white: rgb(238, 238, 238);
+  --leader-green: #97BF7A;
+  --light-fontColor: rgb(22,22,22);
+  --dark-fontColor-header: #FF7501;
+  --dark-fontColor: white;
+  --dark-background: #202020;
+}
+/* || boilerplate */
+
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-color: var(--dark-background);
+  color: var(--dark-fontColor);
+}
+
+
+/* || nav */
+header {
+    position: sticky;
+    top: -1px;
+  }
+
+  .flexWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .flexWrapper li {
+    margin-right: calc(.1em + 5vw);
+    font-size: calc(.1em + 1.5vw); 
+  }
+
+  .flexWrapper li:first-child {
+    width: calc(22px + 4vw);
+    height: calc(22px + 4vw);
+    margin-right: auto;
+  }
+
+  img {
+    max-width: 100%;
+    }
+
+  .imgWrapper {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+  }
+
+  header a {
+    transition: all 0.3s;
+    text-decoration: overline;
+    text-decoration-thickness: 3px;
+  }
+  
+  header a:link,
+  header a:visited {
+    color: var(--dark-fontColor);
+  }
+
+  header a:hover {
+    color: var(--dark-fontColor);
+  }
+
+  .flexWrapper li:nth-child(2) a{
+    color: #FD87FF;
+  }
+  .flexWrapper li:nth-child(3) a{
+    color: #3674FF;
+  }
+  .flexWrapper li:nth-child(4) a{
+    color: #BFF29B;
+  }
+  .flexWrapper li:nth-child(5) a{
+    color: var(--dark-fontColor-header);
+  }
+  .flexWrapper li:nth-child(5){
+    margin: 0;
+  }
+
+
+
+
+  /* || main */
+
+  body {
+    margin: 0 5vw 0 5vw;
+
+  }
+
+  .hero {
+    /* display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+    "p p p p p . . . . . . ."
+    "h h h h h h h h . . . ."
+    "h h h h h h h h . . . ."
+    ". . . . o o o o . . . ."
+    ". . . . l l l l l l l l"
+    ". . . . l l l l l l l l" */
+  }
+
+  .hero h1 {
+    font-family: 'Arvo', serif;
+    color: var(--dark-fontColor-header);
+    font-size: calc(2rem + 3vw);
+    margin: 2rem 0;
+    /* grid-area: h; */
+  }
+
+  .hero p {
+    font-size: calc(.8rem + 1vw);
+  }
+
+  .hero p:first-child {
+    /* grid-area: p; */
+  }
+
+  .hero .proud{
+    /* grid-area: o; */
+  }
+
+  .hero a {
+    text-decoration: underline;
+    font-size: calc(2rem + 2vw);
+  }
+
+  .hero ul {
+    list-style: none;
+    font-size: calc(1.6rem + 1vw);
+    line-height: 5rem;
+    /* grid-area: l; */
+  }
+
+  .hero li:first-child a {
+    color: #D773D9;
+  }
+
+  .hero li:first-child a:hover {
+    color: #FD87FF;
+  }
+  
+
+  .hero li:first-child::marker {
+    content:"🧑🏻‍💻";
+    padding-right: 30px;
+  }
+
+  .hero li:nth-child(2) a {
+    color: var(--inbetween-blue);
+  }
+
+  .hero li:nth-child(2) a:hover {
+    color: #3674FF;
+  }
+
+  .hero li:nth-child(2)::marker {
+    content:"📣"
+  }
+
+  .hero li:nth-child(3) a {
+    color: var(--leader-green);
+  }
+
+  .hero li:nth-child(3)::marker {
+    content:"🙌🏼"
+  }
+
+  .hero li:nth-child(3) a:hover {
+    color: #BFF29B;
+  }
+
+
+  @media screen and (width < 1080px) {
+    .hero {
+      display: block;
+    }
+  }
