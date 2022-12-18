@@ -47,7 +47,7 @@ body {
   }
 
   header a {
-    transition: all 0.3s;
+    transition: all 0.5s;
     text-decoration: overline;
     text-decoration-thickness: 3px;
   }
@@ -155,8 +155,6 @@ align-self: flex-end;
   .directed p {
     font-size: calc(1.5rem + 1.5vw);
   }
-
-
 
   .landing button {
     grid-area: b;
