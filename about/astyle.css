@@ -11,6 +11,11 @@
   --dark-background: #202020;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(../media/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
 *,
 ::after,
 ::before {
@@ -39,7 +44,8 @@ header {
 
   .flexWrapper li {
     margin-right: calc(.1em + 5vw);
-    font-size: calc(.1em + 1.5vw); 
+    font-size: calc(.1em + 1.5vw + .5vh); 
+
   }
 
   .flexWrapper li:first-child {
@@ -60,6 +66,7 @@ header {
     transition: all 0.3s;
     text-decoration: overline;
     text-decoration-thickness: 3px;
+    font-family: 'Roboto', serif;
   }
   
   header a:link,
@@ -87,13 +94,13 @@ header {
     margin: 0;
   }
 
-  .flexWrapper li:nth-child(2) a,
+  /* .flexWrapper li:nth-child(2) a,
   .flexWrapper li:nth-child(3) a,
   .flexWrapper li:nth-child(4) a,
   .flexWrapper li:nth-child(5) a {
     padding: .5rem;
     background-color: var(--dark-background);
-  }
+  } */
   
   .flexWrapper li:nth-child(2) a:hover,
   .flexWrapper li:nth-child(3) a:hover,
@@ -123,10 +130,10 @@ header {
       display: block;
       position: fixed;
       z-index: 9999;
-      top: 50%;
-      right: -22vw;
+      top: 45%;
+      right: -20vw;
       transform: translate3d(0,-30%,0);
-      width: 60vw;
+      width: calc(50vw + 20vh);
       /* aspect-ratio: 1/1; */
       border-radius: 100%;
   
@@ -135,19 +142,18 @@ header {
   }
   
   
-  .splash h1, .splash p {
-      font-weight: bolder;
-  }
   
   .splash h1 {
+      font-weight: bolder; 
       color: #3674FF;
       font-size:calc(2rem + 3vw);
       text-align: right;
+      font-family: 'Roboto', serif;
+      margin: 0;
   }
   
-  .splash p {
-      color: #BFF29B;    
-      font-size:large;
+  .splash h1 span {
+    font-size: calc(2rem + 1vw);
   }
   
   .splash {
@@ -159,38 +165,34 @@ header {
 
   .infoBox {
     background-color: #202020;
-    font-size: calc(1rem + 2vw);
     width: 80vw;
     height: 80vh;
-
 }
 
 .flex {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-evenly;
-    margin-top: 0;
+    margin: 0;
     padding-left: 0;
 }
 
 .flex > li {
     border-radius: 50%;
     cursor: pointer;
+    font-size: calc(3rem + 5vw);
+    margin-right: auto;
+}
 
-    font-size: calc(2rem + 5vw);
+.flex > li:hover {
+  color: var(--inbetween-blue);
 }
 
 
 .infoBox p {
     margin-top: 0;
-    text-align: center;
+    text-align: left;
     color: #3674FF;
-
-}
-
-.flex p {
-    font-size:medium;
-    color: rgb(60, 126, 206);
-    margin: 0;
-}
+    font-family: 'Roboto', serif;
+    font-weight: 200;
+  }
