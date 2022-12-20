@@ -28,8 +28,7 @@ body {
 header {
     position: sticky;
     top: -1px;
-  }
-
+}
   .flexWrapper {
     display: flex;
     justify-content: space-between;
@@ -87,6 +86,14 @@ header {
   .flexWrapper li:nth-child(5){
     margin: 0;
   }
+
+  .flexWrapper li:nth-child(2) a,
+  .flexWrapper li:nth-child(3) a,
+  .flexWrapper li:nth-child(4) a,
+  .flexWrapper li:nth-child(5) a {
+    padding: .5rem;
+    background-color: var(--dark-background);
+  }
   
   .flexWrapper li:nth-child(2) a:hover,
   .flexWrapper li:nth-child(3) a:hover,
@@ -106,3 +113,84 @@ header {
       margin: 0 5vw 0 5vw;
   
     }
+
+
+
+    /* || about image */
+    .splash img {
+      pointer-events: none;
+      filter: grayscale(.9);
+      display: block;
+      position: fixed;
+      z-index: 9999;
+      top: 50%;
+      right: -22vw;
+      transform: translate3d(0,-30%,0);
+      width: 60vw;
+      /* aspect-ratio: 1/1; */
+      border-radius: 100%;
+  
+      mix-blend-mode: color-dodge;
+  
+  }
+  
+  
+  .splash h1, .splash p {
+      font-weight: bolder;
+  }
+  
+  .splash h1 {
+      color: #3674FF;
+      font-size:calc(2rem + 3vw);
+      text-align: right;
+  }
+  
+  .splash p {
+      color: #BFF29B;    
+      font-size:large;
+  }
+  
+  .splash {
+      margin: 5vw 0 0 10vw;
+  }
+
+
+/* || about text */
+
+  .infoBox {
+    background-color: #202020;
+    font-size: calc(1rem + 2vw);
+    width: 80vw;
+    height: 80vh;
+
+}
+
+.flex {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.flex > li {
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-size: calc(2rem + 5vw);
+}
+
+
+.infoBox p {
+    margin-top: 0;
+    text-align: center;
+    color: #3674FF;
+
+}
+
+.flex p {
+    font-size:medium;
+    color: rgb(60, 126, 206);
+    margin: 0;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list bios</title>
+
+    <style>
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .infoBox {
+            background-color: #202020;
+            color: white;
+            font-size: calc(1rem + 2vw);
+            width: 80vw;
+            height: 80vh;
+            padding-bottom: 20vh;
+        }
+
+        .flex {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 0;
+
+        }
+
+        .flex > li {
+            border-radius: 50%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: calc(2rem + 2vw);
+        }
+
+        p {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .flex p {
+            font-size:medium;
+            color: rgb(60, 126, 206);
+        }
+
+        
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <section class="infoBox">        
+        <ul class="flex">
+            <li class="shortest">
+                <a href="#">&bull;</a>
+            </li>
+            <li class="middle">
+                <a href="#">&bull;</a> 
+            </li>
+            <li class="longest">
+                <a href="#">&bull;</a> 
+            </li>
+            <li class="longest">
+                <a href="#">&bull;</a> 
+            </li>
+            <li class="longest">
+                <a href="#">&bull;</a> 
+            </li>
+
+        </ul>
+        <p id="para">adjust bio length above!</p>
+    </section>
+</body>
+</html>
+
+<script>
+
+    const body = document.body;
+    
+    const listItems  = document.getElementsByTagName('li');
+
+    const para = document.getElementById("para");
+    
+    for (const item of listItems) {
+        item.addEventListener('click', () => changeText(item));
+    }
+
+    function changeText(item) {
+
+        for (const items of listItems) {
+            items.style.color = "";
+        }
+
+        // if (item.classList.contains("shortest")) {
+        //     para.textContent = "this is the shortest bio"
+        //     item.style.backgroundColor = "green";
+        // } else if (item.classList.contains("middle")) {
+        //     para.textContent = "meeeeedium length!"
+        //     item.style.backgroundColor = "blue";
+
+        // } else if (item.classList.contains("longest")) {
+        //     para.textContent = "long long length!"
+        //     item.style.backgroundColor = "red";
+
+        // } else {
+        //     para.textContent = "undefined/error"
+        // }
+
+        let className = item.className;
+
+        switch (className) {
+            case 'shortest':             
+            para.textContent = "this is the shortest bio"
+            item.style.color = "#FF7501";
+            break;
+
+            case 'middle':
+            para.textContent = "meeeeedium length!"
+            item.style.color = "#FF7501";
+            break;
+
+            case 'longest':
+            para.textContent = "long long length! long long length!long long length!long long length!long long length!long long length!long long length!long long length!"
+            item.style.color = "#FF7501";
+            break;
+
+            default: para.textContent = 'error! error!'
+        }
+
+
+    }
+    
+
+
+    
+    </script>
