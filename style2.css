@@ -12,6 +12,10 @@
 }
 /* || boilerplate */
 
+@font-face {
+  font-family: Roboto;
+  src: url(media/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
 
 *,
 ::after,
@@ -65,6 +69,7 @@ header {
     transition: all 0.3s;
     text-decoration: overline;
     text-decoration-thickness: 3px;
+    font-family: 'Roboto', serif;
   }
 
 

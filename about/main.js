@@ -1,6 +1,3 @@
-const body = document.body;
-    
-
 const listItems  = document.getElementsByClassName('bio');
 
 const para = document.getElementById("para");
@@ -26,7 +23,7 @@ function changeText(item) {
         break;
 
         case 'short bio':             
-        para.textContent = "Michael is a free-lance web developer passionate about defining and finding impactful work. He is trying his hardest to develop a tolerance to spicy food."
+        para.textContent = "michael is a free-lance web developer driven to define and make a positive impact. He tries his hardest to develop a tolerance to spicy food."
         item.style.color = "#FF7501";
         para.style.lineHeight = "calc(3rem - 1vh + 1.8vw)";
 
@@ -35,7 +32,7 @@ function changeText(item) {
         break;
 
         case 'middle bio':
-        para.textContent = "Michael is a multi-disciplinary developer, drawing upon backgrounds in cognitive and educational psych, creative writing, and teaching. A proud generalist, he tries his hardest to make something better everyday."
+        para.textContent = "michael is a multi-disciplinary developer, drawing upon backgrounds in cognitive and educational psych, creative writing, and teaching. A proud generalist, he tries his hardest to make something better everyday."
         para.style.fontSize = "calc(1rem + 2.5vw)";
         para.style.lineHeight = "calc(3rem - 1vh + 1.5vw)";
 
@@ -43,7 +40,7 @@ function changeText(item) {
         break;
 
         case 'longer bio':
-            para.textContent = "Michael chases abstract terms like “impact,” “change,” and “leadership,” spending late nights mulling over how to operationalize and apply them to his work. He built a pan-Asian mental health conference as an undergrad, and continues to speak and advocate for his communities."
+            para.textContent = "michael enjoys examining abstractions like “impact,” “rhetoric,” and “leadership,” spending late nights mulling over how to operationalize and apply them to his work. He built a pan-Asian mental health conference as an undergrad, and continues to speak and advocate for his communities."
             item.style.color = "#FF7501";
             para.style.fontSize = "calc(1rem + 2vw)";
             para.style.lineHeight = "calc(3rem - 1vh + 1.1vw)";
