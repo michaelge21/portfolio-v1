@@ -1,5 +1,4 @@
 const body = document.body;
-    
 
 const listItems  = document.getElementsByClassName('bio');
 
@@ -8,6 +7,8 @@ const para = document.getElementById("para");
 for (const item of listItems) {
     item.addEventListener('click', () => changeText(item));
 }
+
+
 
 function changeText(item) {
 
@@ -35,7 +36,7 @@ function changeText(item) {
         break;
 
         case 'middle bio':
-        para.textContent = "Michael is a multi-disciplinary developer, drawing upon backgrounds in cognitive and educational psych, creative writing, and teaching. A proud generalist, he tries his hardest to make something better everyday."
+        para.textContent = "Michael is a multi-disciplinary front-end developer, applying backgrounds in cognitive and educational psych, creative writing, and teaching. A proud generalist, he tries his hardest to make something better everyday."
         para.style.fontSize = "calc(1rem + 2.5vw)";
         para.style.lineHeight = "calc(3rem - 1vh + 1.5vw)";
 
@@ -58,4 +59,10 @@ function changeText(item) {
 
         default: 
     }
+}
+
+const splashImg = document.getElementById("splashImg")
+
+window.onload = function() {
+    splashImg.classList.add("fromRight")
 }

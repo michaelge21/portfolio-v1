@@ -93,14 +93,6 @@ header {
   .flexWrapper li:nth-child(5){
     margin: 0;
   }
-
-  /* .flexWrapper li:nth-child(2) a,
-  .flexWrapper li:nth-child(3) a,
-  .flexWrapper li:nth-child(4) a,
-  .flexWrapper li:nth-child(5) a {
-    padding: .5rem;
-    background-color: var(--dark-background);
-  } */
   
   .flexWrapper li:nth-child(2) a:hover,
   .flexWrapper li:nth-child(3) a:hover,
@@ -121,8 +113,6 @@ header {
   
     }
 
-
-
     /* || about image */
     .splash img {
       pointer-events: none;
@@ -130,17 +120,22 @@ header {
       display: block;
       position: fixed;
       z-index: 9999;
-      top: 45%;
-      right: -20vw;
-      transform: translate3d(0,-30%,0);
-      width: calc(50vw + 20vh);
-      /* aspect-ratio: 1/1; */
+      top: 15%;
+      right: -30vw;
+      width: calc(40vw + 20vh);
       border-radius: 100%;
   
       mix-blend-mode: color-dodge;
-  
+
+      transition: all ease-out .8s;
+      opacity: 0;
+      transform: rotateZ(10deg);
   }
-  
+  .splash img.fromRight {
+    opacity: 1;
+    right: -10vw;
+    transform: rotateZ(-10deg);
+  }
   
   
   .splash h1 {

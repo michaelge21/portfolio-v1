@@ -12,6 +12,10 @@
 }
 /* || boilerplate */
 
+@font-face {
+  font-family: Roboto;
+  src: url(media/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
 
 *,
 ::after,
@@ -28,76 +32,78 @@ body {
 
 /* || nav */
 header {
-    position: sticky;
-    top: -1px;
+  position: sticky;
+  top: -1px;
+}
+.flexWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
 
+.flexWrapper li {
+  margin-right: calc(.1em + 5vw);
+  font-size: calc(.1em + 1.5vw + .5vh); 
 
+}
+
+.flexWrapper li:first-child {
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
   }
 
-  .flexWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding-left: 0;
-  }
+.imgWrapper {
+  width: calc(60px + 2vw);
+  height: calc(60px + 2vw);
+  display: inline-block;
+}
 
-  .flexWrapper li {
-    margin-right: calc(.1em + 5vw);
-    font-size: calc(.1em + 1.5vw + .7vh); 
-  }
+header a {
+  transition: all 0.3s;
+  text-decoration: overline;
+  text-decoration-thickness: 3px;
+  font-family: 'Roboto', serif;
+}
 
-  .flexWrapper li:first-child {
-    margin-right: auto;
-  }
+header a:link,
+header a:visited {
+  color: var(--dark-fontColor);
+}
 
-  img {
-    max-width: 100%;
-    }
+header a:hover {
+  color: var(--dark-fontColor);
+}
 
-  .imgWrapper {
-    width: calc(50px + 1vw + 1vh);
-    height: calc(50px + 1vw + 1vh);
-    display: inline-block;
-  }
-
-  header a {
-    transition: all 0.3s;
-    text-decoration: overline;
-    text-decoration-thickness: 3px;
-  }
-
-
-  
-
-
-
-  .flexWrapper li:nth-child(2) a{
-    color: #FD87FF;
-  }
-
-  .flexWrapper li:nth-child(3) a{
-    color: #3674FF;
-  }
-  .flexWrapper li:nth-child(4) a{
-    color: #BFF29B;
-  }
-  .flexWrapper li:nth-child(5) a{
-    color: var(--dark-fontColor-header);
-  }
-  .flexWrapper li:nth-child(5){
-    margin: 0;
-  }
+.flexWrapper li:nth-child(2) a{
+  color: #FD87FF;
+}
+.flexWrapper li:nth-child(3) a{
+  color: #3674FF;
+}
+.flexWrapper li:nth-child(4) a{
+  color: #BFF29B;
+}
+.flexWrapper li:nth-child(5) a{
+  color: var(--dark-fontColor-header);
+}
+.flexWrapper li:nth-child(5){
+  margin: 0;
+}
 
 
-  .flexWrapper li:nth-child(2) a:hover,
-  .flexWrapper li:nth-child(3) a:hover,
-  .flexWrapper li:nth-child(4) a:hover,
-  .flexWrapper li:nth-child(5) a:hover
-  {
-    color: white;
-  }
-  
+.flexWrapper li:nth-child(2) a:hover,
+.flexWrapper li:nth-child(3) a:hover,
+.flexWrapper li:nth-child(4) a:hover,
+.flexWrapper li:nth-child(5) a:hover
+{
+  color: white;
+}
+
 
   /* || main */
 
