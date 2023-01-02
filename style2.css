@@ -16,6 +16,10 @@
   font-family: Roboto;
   src: url(media/fonts/RobotoSlab-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: Roboto;
+  src: url(media/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
 
 *,
 ::after,
@@ -63,6 +67,12 @@ img {
   display: inline-block;
 }
 
+  header a {
+    transition: all 0.3s;
+    text-decoration: overline;
+    text-decoration-thickness: 3px;
+    font-family: 'Roboto', serif;
+  }
 header a {
   transition: all 0.3s;
   text-decoration: overline;
@@ -96,14 +106,14 @@ header a:hover {
 }
 
 
-.flexWrapper li:nth-child(2) a:hover,
-.flexWrapper li:nth-child(3) a:hover,
-.flexWrapper li:nth-child(4) a:hover,
-.flexWrapper li:nth-child(5) a:hover
-{
-  color: white;
-}
-
+  .flexWrapper li:nth-child(2) a:hover,
+  .flexWrapper li:nth-child(3) a:hover,
+  .flexWrapper li:nth-child(4) a:hover,
+  .flexWrapper li:nth-child(5) a:hover
+  {
+    color: white;
+  }
+  
 
   /* || main */
 
