@@ -1,6 +1,19 @@
 const blurbs = document.getElementsByClassName("bio");
 const buttons = document.getElementsByTagName("button");
 
+genBioClasses();
+
+genButtonClasses();
+
+removeAllBlurbs(blurbs);
+
+displayEventListeners(buttons, blurbs);
+
+colorEventListeners(buttons);
+
+randomizeBorderRadii(buttons);
+
+
 function genBioClasses() {
     let i = 0;
 
@@ -18,14 +31,13 @@ function genButtonClasses() {
     }
 }
 
-
 function removeAllBlurbs(array) {
     for (const blurb of array) {
         blurb.style.display = "none";
     }
 }
 
-function buttonEventListeners(buttonArray, blurbArray) {
+function displayEventListeners(buttonArray, blurbArray) {
 
     for (let i = 0; i < buttonArray.length; i++) {
         buttonArray[i].addEventListener('mouseover', () => {
@@ -38,18 +50,33 @@ function buttonEventListeners(buttonArray, blurbArray) {
                 blurb.style.display = "none";
             }
             blurbArray[i].style.display = 'block';
-
-            // THIS BLOCK HERE should be refactored
-            // into a different function. it's doing a diff task,
-            // because it deals with color rather than displaying.
-            for (const button of buttonArray) {
-                button.style.backgroundColor = "revert"
-            }
-            buttonArray[i].style.backgroundColor = "rgb(71, 71, 194)";
     });
 
         buttonArray[i].addEventListener('mouseout', () => {
             blurbArray[i].style.display = 'none';
+        });
+    }
+}
+
+function colorEventListeners(buttonArray) {
+
+    for (let i = 0; i < buttonArray.length; i++) {
+        buttonArray[i].addEventListener('mouseover', () => {
+            for (const button of buttonArray) {
+                button.style.backgroundColor = "revert"
+            }
+            buttonArray[i].style.backgroundColor = "rgb(71, 71, 194)";
+        });
+        buttonArray[i].addEventListener('click', () => {
+            for (const button of buttonArray) {
+                button.style.backgroundColor = "revert"
+            }
+            buttonArray[i].style.backgroundColor = "rgb(71, 71, 194)";
+        });
+        buttonArray[i].addEventListener('mouseout', () => {
+            for (const button of buttonArray) {
+                button.style.backgroundColor = "revert"
+            }
         });
     }
 }
@@ -85,15 +112,5 @@ function fourRandomsGen() {
     return randomValueArray;
 }
 
-console.log(fourRandomsGen());
 
-genBioClasses();
-
-genButtonClasses();
-
-removeAllBlurbs(blurbs);
-
-buttonEventListeners(buttons, blurbs);
-
-randomizeBorderRadii(buttons);
 

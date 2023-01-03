@@ -15,6 +15,11 @@
     align-items: center;
 }
 
+.infoBox {
+    /* flex-flow: column; */
+
+}
+
 ul {
     list-style: none;
     padding: 0;
