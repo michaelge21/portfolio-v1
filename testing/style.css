@@ -1,0 +1,39 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.infoBox {
+    width: 70%;
+    outline: 3px solid green;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    height: 30vh;
+    margin: 0;
+}
+
+button {
+    padding: calc(10px + 1vw + 1vh);
+    border-radius: 50%;
+    border: 0;
+    transition: .3s all;
+}
+
+li:hover button {
+    background-color: rgb(71, 71, 194);
+}
+
+
+p {
+    margin: 0;
+}
