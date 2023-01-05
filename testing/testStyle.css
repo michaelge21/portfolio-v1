@@ -1,0 +1,113 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --inbetween-yellow: rgb(255, 247, 0);
+    --inbetween-blue:rgb(60, 126, 206);
+    --wucypher-white: rgb(255, 255, 255);
+    --wucypher-orange: rgb(242, 152, 73);
+    --leader-white: rgb(238, 238, 238);
+    --leader-green: #97BF7A;
+    --light-fontColor: rgb(22,22,22);
+    --dark-fontColor-header: #FF7501;
+    --dark-fontColor: white;
+    --dark-background: #202020;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    src: url(../media/fonts/RobotoSlab-VariableFont_wght.ttf);
+  }
+  
+/* || HTML element boiler */
+ body {
+    background-color: var(--dark-background);
+    color: #3674FF;
+  }
+
+  p {
+    margin: 0;
+    padding: 0 1rem;
+    line-height: normal;
+    font-size: large;
+}
+
+
+/* || element boiler */
+
+.infoBox {
+    width: 85%;
+    height:auto;
+    /* outline: 1px solid green; */
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    height: 20vh;
+
+    padding: 0;
+    border:rgb(238, 238, 238) 1px ridge;
+    border-radius: 20px;
+    margin: 0;
+
+    list-style: none;
+}
+
+button {
+    padding: calc(20px + 1vw + 1vh);
+    border-radius: 50%;
+    border: 0;
+
+    transition: .3s all;
+
+    cursor: pointer;
+}
+
+.infoBox > p:first-child {
+    /* using > selects direct descendents. if you do 
+    this selector without >, it chooses all first-child P  */
+
+    margin: 10px;
+}
+
+
+
+li:hover button {
+    background-color: rgb(71, 71, 194);
+}
+
+
+.blurbWrapper {
+    margin-top: 1rem;
+}
+
+.blurbWrapper p:first-child {
+    font-size: calc(1rem + 2vw + 2vh);
+}
+
+.blurbWrapper p:nth-child(2) {
+    font-size: calc(1rem + 1.8vw + 1.8vh);
+}
+
+.blurbWrapper p:nth-child(3) {
+    font-size: calc(1rem + 1.6vw + 1.6vh);
+}
+
+.blurbWrapper p:nth-child(4) {
+    font-size: calc(1rem + 1.4vw + 1.4vh);
+}
+
+.blurbWrapper p:nth-child(5) {
+    font-size: calc(1rem + 1.1vw + 1.1vh);
+}
+
+

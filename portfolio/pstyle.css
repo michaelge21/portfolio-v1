@@ -54,9 +54,9 @@ header {
   margin-right: auto;
 }
 
-img {
+.flexWrapper img {
   max-width: 100%;
-  }
+}
 
 .imgWrapper {
   width: calc(60px + 2vw);

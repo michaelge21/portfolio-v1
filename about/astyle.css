@@ -20,47 +20,47 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: var(--dark-background);
-  color: var(--dark-fontColor);
+  color: #3674FF;
 }
 
 
 /* || nav */
 header {
-    position: sticky;
-    top: -1px;
+  position: sticky;
+  top: -1px;
 }
-  .flexWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding-left: 0;
-  }
+.flexWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
 
-  .flexWrapper li {
-    margin-right: calc(.1em + 5vw);
-    font-size: calc(.1em + 1.5vw + .7vh); 
+.flexWrapper li {
+  margin-right: calc(.1em + 5vw);
+  font-size: calc(.1em + 1.5vw + .5vh); 
 
-  }
+}
 
-  .flexWrapper li:first-child {
-    margin-right: auto;
-  }
+.flexWrapper li:first-child {
+  margin-right: auto;
+}
 
-  img {
-    max-width: 100%;
-    }
+.flexWrapper img {
+  max-width: 100%;
+}
 
-  .imgWrapper {
-    width: calc(50px + 1vw + 1vh);
-    height: calc(50px + 1vw + 1vh);
-    display: inline-block;
-  }
+.imgWrapper {
+  width: calc(60px + 2vw);
+  height: calc(60px + 2vw);
+  display: inline-block;
+}
 
   header a {
     transition: all 0.3s;
@@ -68,32 +68,34 @@ header {
     text-decoration-thickness: 3px;
     font-family: 'Roboto', serif;
   }
-  
-  header a:link,
-  header a:visited {
-    color: var(--dark-fontColor);
-  }
 
-  header a:hover {
-    color: var(--dark-fontColor);
-  }
 
-  .flexWrapper li:nth-child(2) a{
-    color: #FD87FF;
-  }
-  .flexWrapper li:nth-child(3) a{
-    color: #3674FF;
-  }
-  .flexWrapper li:nth-child(4) a{
-    color: #BFF29B;
-  }
-  .flexWrapper li:nth-child(5) a{
-    color: var(--dark-fontColor-header);
-  }
-  .flexWrapper li:nth-child(5){
-    margin: 0;
-  }
-  
+header a:link,
+header a:visited {
+  color: var(--dark-fontColor);
+}
+
+header a:hover {
+  color: var(--dark-fontColor);
+}
+
+.flexWrapper li:nth-child(2) a{
+  color: #FD87FF;
+}
+.flexWrapper li:nth-child(3) a{
+  color: #3674FF;
+}
+.flexWrapper li:nth-child(4) a{
+  color: #BFF29B;
+}
+.flexWrapper li:nth-child(5) a{
+  color: var(--dark-fontColor-header);
+}
+.flexWrapper li:nth-child(5){
+  margin: 0;
+}
+
+
   .flexWrapper li:nth-child(2) a:hover,
   .flexWrapper li:nth-child(3) a:hover,
   .flexWrapper li:nth-child(4) a:hover,
@@ -158,36 +160,85 @@ header {
 
 /* || about text */
 
-  .infoBox {
-    background-color: #202020;
-    width: 80vw;
-    height: 80vh;
+p {
+  margin: 0;
+  padding: 0 1rem;
+  line-height: normal;
+  font-size: large;
+}
+
+
+/* element boiler */
+
+.infoBox {
+  width: 85%;
+  height:auto;
+  /* outline: 1px solid green; */
 }
 
 .flex {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    margin: 0;
-    padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.flex > li {
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: calc(3rem + 5vw);
-    margin-right: auto;
+.infoBox ul {
+  height: 15vh;
+
+  padding: 0;
+  border:rgb(238, 238, 238) 1px ridge;
+  border-radius: 20px;
+  margin: 0;
+
+  list-style: none;
 }
 
-.flex > li:hover {
-  color: var(--inbetween-blue);
+button {
+  padding: calc(20px + 1vw + 1vh);
+  border-radius: 50%;
+  border: 0;
+
+  transition: .3s all;
+
+  cursor: pointer;
+}
+
+.infoBox > p:first-child {
+  /* using > selects direct descendents. if you do 
+  this selector without >, it chooses all first-child P  */
+
+  margin: 10px;
 }
 
 
-.infoBox p {
-    margin-top: 0;
-    text-align: left;
-    color: #3674FF;
-    font-family: 'Roboto', serif;
-    font-weight: 200;
-  }
+
+li:hover button {
+  background-color: rgb(71, 71, 194);
+}
+
+
+.blurbWrapper {
+  margin-top: 1rem;
+}
+
+.blurbWrapper p:first-child {
+  font-size: calc(1rem + 2.2vw + 2.2vh);
+}
+
+.blurbWrapper p:nth-child(2) {
+  font-size: calc(1rem + 1.8vw + 1.8vh);
+}
+
+.blurbWrapper p:nth-child(3) {
+  font-size: calc(1rem + 1.3vw + 1.3vh);
+}
+
+.blurbWrapper p:nth-child(4) {
+  font-size: calc(1rem + 1vw + 1vh);
+}
+
+.blurbWrapper p:nth-child(5) {
+  font-size: calc(1rem + .6vw + .6vh);
+}
+
+
