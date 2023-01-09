@@ -1,0 +1,57 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --button-dimension: 80px;
+}
+
+.menuButton {
+    position: absolute;
+    width: var(--button-dimension);
+    height: var(--button-dimension);
+    
+    border-radius: 0 0 0 50%;
+    border: 0;
+
+    background-color: black;
+    color: white;
+
+    top: 0;
+    right: 0;
+}
+
+.mobileNav {
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.navButtons {
+    height: 100%;
+    width: 100%;
+    flex-flow: column wrap;
+
+}
+
+.navButtons li:nth-child(n) {
+    height: 25%;
+    width: 100%;
+    list-style: none;
+    background-color: rgba(128, 128, 128, 0.788);
+
+}
+
+.navButtons li:nth-child(n+3) {
+    width: 50%;
+}
+
+.navButtons li:last-child {
+    width: 45%;
+}

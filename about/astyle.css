@@ -245,4 +245,13 @@ li:hover button {
   .infoBox {
     width: 100%;
   }
+
+  .blurbWrapper {
+    height: 650px;
+    /* addresses the jerky nature that's found on mobile.
+    problem: was getting jumpy screen when selecting long bio, then a shorter one.
+    reason: container (this element) was set to grow depending on content. so, when switching from 
+    large content to shorter, screen had no choice but to jump back up the page.
+    solution: manually setting height of container to encapsulate even the largest bio prevents page jumping */
+  }
 }
