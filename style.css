@@ -94,6 +94,9 @@ header a:hover {
 .flexWrapper li:nth-child(4) a{
   color: #BFF29B;
 }
+
+
+
 .flexWrapper li:nth-child(5) a{
   color: var(--dark-fontColor-header);
 }
@@ -335,10 +338,22 @@ header a:hover {
 
     .flexWrapper {
       justify-content: center;
+
     }
 
     .flexWrapper li:first-child {
       margin-right: unset;
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      background-color: var(--dark-background);
+      rotate: 45deg;
+
+      border-radius: 20%;
+    }
+
+    .flexWrapper li:first-child img {
+      rotate: -45deg
     }
 
 
@@ -347,6 +362,8 @@ header a:hover {
     ::after {
       overflow: hidden;
     }
+
+    
   }
 
 
