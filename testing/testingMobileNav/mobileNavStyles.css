@@ -8,10 +8,26 @@
 }
 
 :root {
-    --button-dimension: 80px;
-    --button-smallDimension: 60px;
+    --button-dimension: 90px;
+    --button-smallDimension: 70px;
+    --dark-background: #202020;
+
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(../../media/fonts/RobotoSlab-VariableFont_wght.ttf);
+  }
+
+body {
+    background-color: var(--dark-background);
+}
+
+
+.mobileNav {
+    height: 100vh;
+    font-family: "Roboto", serif;
+}
 
 .menuButton {
     position: absolute;
@@ -21,8 +37,8 @@
     border-radius: 0 0 0 50%;
     border: 0;
 
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 
     top: 0;
     right: 0;
@@ -36,9 +52,7 @@
     
 }
 
-.mobileNav {
-    height: 100vh;
-}
+
 
 .navButtons {
     display: flex;
@@ -59,10 +73,36 @@
     width: 100%;
 
     list-style: none;
-    background-color: rgba(128, 128, 128, 0.788);
+    background-color: rgba(0, 0, 0, 0.308);
 
-    border: 2px pink solid;
+    letter-spacing: 1px;
 }
+
+.navButtons li a {
+    font-size: clamp(calc(1rem + 1vw + 1vh), calc(1rem + 2vw + 2vh), 6rem);
+}
+
+.navButtons li a span {
+    font-size: calc(1rem + .5vw + .5vh);
+}
+
+
+.navButtons li:first-child a{
+    background-color: rgba(253, 135, 255, .9);
+    color: white;
+  }
+  .navButtons li:nth-child(2) a{
+    background-color: rgba(54, 116, 255, .9);
+    color: white;
+  }
+  .navButtons li:nth-child(3) a{
+    background-color: rgba(191, 242, 155, .9);
+    color: white;
+  }
+  .navButtons li:nth-child(4) a{
+    background-color: rgba(255, 117, 1, .9);
+    color: white;
+  }
 
 .navButtons li:nth-child(n+3) {
     width: 50%;
