@@ -16,7 +16,7 @@
 /* || boilerplate */
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url(../media/fonts/RobotoSlab-VariableFont_wght.ttf);
 }
 
@@ -25,12 +25,12 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
 }
 
 body {
   background-color: var(--dark-background);
   color: var(--dark-fontColor);
+  font-family: "Barlow", sans-serif;
 }
 
 
@@ -117,7 +117,7 @@ header a:hover {
 
   /* || mobile nav */
   .mobileContainer {
-    height: 10vh;
+
     position: absolute;
     font-family: "Roboto", serif;
     overflow: hidden;
@@ -147,6 +147,10 @@ header a:hover {
     right: 0;
 
     transition: .2s ease-out all;
+
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+
 }
 
 .smallDimensions {

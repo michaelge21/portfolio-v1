@@ -113,7 +113,6 @@ header a:hover {
 
     /* || mobile nav */
     .mobileContainer {
-      height: 10vh;
       position: absolute;
       font-family: "Roboto", serif;
       overflow: hidden;
@@ -130,6 +129,7 @@ header a:hover {
   
   .menuButton {
       position: absolute;
+      z-index: 2;
       width: var(--button-dimension);
       height: var(--button-dimension);
       
@@ -143,6 +143,8 @@ header a:hover {
       right: 0;
   
       transition: .2s ease-out all;
+
+      font-size: 1rem;
   }
   
   .smallDimensions {
@@ -188,19 +190,19 @@ header a:hover {
   
   
   .navButtons li:first-child a{
-      background-color: rgba(253, 135, 255, .9);
+      background-color: rgba(253, 135, 255, 1);
       color: white;
     }
     .navButtons li:nth-child(2) a{
-      background-color: rgba(54, 116, 255, .9);
+      background-color: rgba(54, 116, 255, .5);
       color: white;
     }
     .navButtons li:nth-child(3) a{
-      background-color: rgba(191, 242, 155, .9);
+      background-color: rgba(191, 242, 155, 1);
       color: white;
     }
     .navButtons li:nth-child(4) a{
-      background-color: rgba(255, 117, 1, .9);
+      background-color: rgba(255, 117, 1, 1);
       color: white;
     }
   
@@ -237,10 +239,10 @@ header a:hover {
     /* || about image */
     .splash img {
       pointer-events: none;
-      filter: grayscale(.9);
+      filter: grayscale(.2);
       display: block;
       position: fixed;
-      z-index: -1;
+      z-index: 0;
       top: 15%;
       right: -30vw;
       width: calc(40vw + 20vh);
@@ -279,7 +281,7 @@ header a:hover {
 
 /* || about text */
 
-p {
+.blurbWrapper p {
   margin: 0;
   padding: 0 1rem;
   line-height: normal;
@@ -312,7 +314,7 @@ p {
   list-style: none;
 }
 
-button {
+.infoBox button {
   padding: calc(20px + 1vw + 1vh);
   border-radius: 50%;
   border: 0;

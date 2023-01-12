@@ -2,7 +2,6 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
   padding: 0;
 }
 
@@ -24,7 +23,7 @@
 /* || boilerplate */
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url(media/fonts/RobotoSlab-VariableFont_wght.ttf);
 }
 
@@ -32,6 +31,7 @@ body {
   background-color: var(--dark-background);
   color: var(--dark-fontColor);
   margin: 0;
+  font-family: "Barlow", sans-serif;
 }
 
 
@@ -147,6 +147,10 @@ header a:hover {
     right: 0;
 
     transition: .2s ease-out all;
+
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+
 }
 
 .smallDimensions {
