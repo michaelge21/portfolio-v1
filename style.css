@@ -120,10 +120,16 @@ header a:hover {
     height: 100vh;
     position: absolute;
     font-family: "Roboto", serif;
+    overflow: hidden;
+}
+
+.noOverflow {
+  overflow: hidden;
 }
 
 .makeMobileWork {
     height: 100vh;
+    
 }
 
 .menuButton {
@@ -323,6 +329,8 @@ header a:hover {
 
 
   @media screen and (max-width: 480px) {
+
+
     .flexWrapper li:nth-child(n+2) {
       display: none;
     }
@@ -333,12 +341,12 @@ header a:hover {
     }
 
     main {
-      margin: 0 0 0 5vw;
+      margin: 0 5vw 0 5vw;
     }
 
     .flexWrapper {
       justify-content: center;
-
+      margin: 0;
     }
 
     .flexWrapper li:first-child {
@@ -356,12 +364,11 @@ header a:hover {
       rotate: -45deg
     }
 
-
-    *, 
-    ::before,
-    ::after {
-      overflow: hidden;
+    .hero {
+      margin: 25px;
     }
+
+
 
     
   }
@@ -369,24 +376,11 @@ header a:hover {
 
 
   @media (prefers-reduced-motion) {
-    .flexWrapper a {
-      transition: 0s all;
+    *,
+    ::before,
+    ::after {
+      transition: all 0s;
     }
-
-    nav {
-      height: 12vh;
-      transition: 0s all;
-    }
-
-    .navButtons {
-
-      transition: 0s all;
-  }
-
-
-  .menuButton {
-    transition: 0s all;
-  }
 
 
     }

@@ -6,7 +6,7 @@ window.onload = function() {
 
 
 const blurbs = document.getElementsByClassName("bio");
-const buttons = document.getElementsByTagName("button");
+const buttons = document.querySelectorAll("ul button");
 
 genBioClasses();
 
