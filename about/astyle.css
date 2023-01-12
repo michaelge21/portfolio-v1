@@ -113,6 +113,7 @@ header a:hover {
 
     /* || mobile nav */
     .mobileContainer {
+      height: var(--button-dimension);
       position: absolute;
       font-family: "Roboto", serif;
       overflow: hidden;
