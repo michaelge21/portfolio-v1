@@ -240,7 +240,7 @@ header a:hover {
     /* || about image */
     .splash img {
       pointer-events: none;
-      filter: grayscale(.2);
+      filter: grayscale(.7);
       display: block;
       position: fixed;
       z-index: 0;
