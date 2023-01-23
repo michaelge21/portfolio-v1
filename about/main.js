@@ -1,6 +1,5 @@
 const splashImg = document.getElementById("splashImg")
 
-
 window.onload = function() {
     splashImg.classList.add("fromRight");
 }
