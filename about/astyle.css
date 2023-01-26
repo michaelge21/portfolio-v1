@@ -1,12 +1,12 @@
 :root {
   --inbetween-yellow: rgb(255, 247, 0);
-  --inbetween-blue:rgb(60, 126, 206);
+  --inbetween-blue: rgb(60, 126, 206);
   --wucypher-white: rgb(255, 255, 255);
   --wucypher-orange: rgb(242, 152, 73);
   --leader-white: rgb(238, 238, 238);
-  --leader-green: #97BF7A;
-  --light-fontColor: rgb(22,22,22);
-  --dark-fontColor-header: #FF7501;
+  --leader-green: #97bf7a;
+  --light-fontColor: rgb(22, 22, 22);
+  --dark-fontColor-header: #ff7501;
   --dark-fontColor: white;
   --dark-background: #202020;
 
@@ -28,9 +28,8 @@
 
 body {
   background-color: var(--dark-background);
-  color: #3674FF;
+  color: #3674ff;
 }
-
 
 /* || nav */
 header {
@@ -46,9 +45,8 @@ header {
 }
 
 .flexWrapper li {
-  margin-right: calc(.1em + 5vw);
-  font-size: calc(.1em + 1.5vw + .5vh); 
-
+  margin-right: calc(0.1em + 5vw);
+  font-size: calc(0.1em + 1.5vw + 0.5vh);
 }
 
 .flexWrapper li:first-child {
@@ -65,13 +63,12 @@ header {
   display: inline-block;
 }
 
-  header a {
-    transition: all 0.3s;
-    text-decoration: overline;
-    text-decoration-thickness: 3px;
-    font-family: 'Roboto', serif;
-  }
-
+header a {
+  transition: all 0.3s;
+  text-decoration: overline;
+  text-decoration-thickness: 3px;
+  font-family: "Roboto", serif;
+}
 
 header a:link,
 header a:visited {
@@ -82,203 +79,193 @@ header a:hover {
   color: var(--dark-fontColor);
 }
 
-.flexWrapper li:nth-child(2) a{
-  color: #FD87FF;
+.flexWrapper li:nth-child(2) a {
+  color: #fd87ff;
 }
-.flexWrapper li:nth-child(3) a{
-  color: #3674FF;
+.flexWrapper li:nth-child(3) a {
+  color: #3674ff;
 }
-.flexWrapper li:nth-child(4) a{
-  color: #BFF29B;
+.flexWrapper li:nth-child(4) a {
+  color: #bff29b;
 }
-.flexWrapper li:nth-child(5) a{
+.flexWrapper li:nth-child(5) a {
   color: var(--dark-fontColor-header);
 }
-.flexWrapper li:nth-child(5){
+.flexWrapper li:nth-child(5) {
   margin: 0;
 }
 
+.flexWrapper li:nth-child(2) a:hover,
+.flexWrapper li:nth-child(3) a:hover,
+.flexWrapper li:nth-child(4) a:hover,
+.flexWrapper li:nth-child(5) a:hover {
+  color: white;
+}
 
-  .flexWrapper li:nth-child(2) a:hover,
-  .flexWrapper li:nth-child(3) a:hover,
-  .flexWrapper li:nth-child(4) a:hover,
-  .flexWrapper li:nth-child(5) a:hover
-  {
-    color: white;
-  }
+.navAbout {
+  text-decoration: none;
+}
 
-  .navAbout {
-    text-decoration: none;
-  }
+/* || mobile nav */
+.mobileContainer {
+  height: var(--button-dimension);
+  position: absolute;
+  font-family: "Roboto", serif;
+  overflow: hidden;
+}
 
-    /* || mobile nav */
-    .mobileContainer {
-      height: var(--button-dimension);
-      position: absolute;
-      font-family: "Roboto", serif;
-      overflow: hidden;
-  }
-  
-  .noOverflow {
-    overflow: hidden;
-  }
-  
-  .makeMobileWork {
-      height: 100vh;
-      
-  }
-  
-  .menuButton {
-      position: absolute;
-      z-index: 2;
-      width: var(--button-dimension);
-      height: var(--button-dimension);
-      
-      border-radius: 0 0 0 50%;
-      border: 0;
-  
-      background-color: white;
-      color: black;
-  
-      top: 0;
-      right: 0;
-  
-      transition: .2s ease-out all;
+.noOverflow {
+  overflow: hidden;
+}
 
-      font-size: 1rem;
-  }
-  
-  .smallDimensions {
-      width: var(--button-smallDimension);
-      height: var(--button-smallDimension);
-      
-  }
-  
-  .navButtons {
-      display: flex;
-      flex-wrap: wrap;
-      height: 100%;
-      transition: .3s ease-out all;
-  
-      margin: 0;
-      padding: 0;
-  
-      transform: translate(0%);
-  
-  }
-  
-  .navButtons li:nth-child(n) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-      height: calc(1/3)*100%;
-      width: 100%;
-  
-      list-style: none;
-      background-color: rgba(0, 0, 0, 0.308);
-  
-      letter-spacing: 1px;
-  }
-  
-  .navButtons li a {
-      font-size: clamp(calc(1rem + 1vw + 1vh), calc(1rem + 2vw + 2vh), 6rem);
-  }
-  
-  .navButtons li a span {
-      font-size: calc(1rem + .5vw + .5vh);
-  }
-  
-  
-  .navButtons li:first-child a{
-      background-color: rgba(253, 135, 255, 1);
-      color: white;
-    }
-    .navButtons li:nth-child(2) a{
-      background-color: rgba(54, 116, 255, .5);
-      color: white;
-    }
-    .navButtons li:nth-child(3) a{
-      background-color: rgba(191, 242, 155, 1);
-      color: white;
-    }
-    .navButtons li:nth-child(4) a{
-      background-color: rgba(255, 117, 1, 1);
-      color: white;
-    }
-  
-  .navButtons li:nth-child(n+3) {
-      width: 50%;
-  }
-  
-  .navButtons li:last-child {
-      width: 50%;
-  }
-  
-  .navButtons a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      color: white;
-      width: 100%;
-      height: 100%;
-  }
-  
-  .placeOffScreen {
-      transform: translate(110%);
-  }
-  
-  
-  
-    /* || main */
-  
-    body {
-      margin: 0 5vw 0 5vw;
-    }
+.makeMobileWork {
+  height: 100vh;
+}
 
-    /* || about image */
-    .splash img {
-      pointer-events: none;
-      filter: grayscale(.7);
-      display: block;
-      position: fixed;
-      z-index: 0;
-      top: 15%;
-      right: -30vw;
-      width: calc(40vw + 20vh);
-      border-radius: 100%;
-  
-      mix-blend-mode: color-dodge;
+.menuButton {
+  position: absolute;
+  z-index: 2;
+  width: var(--button-dimension);
+  height: var(--button-dimension);
 
-      transition: all ease-out .8s;
-      opacity: 0;
-      transform: rotateZ(10deg);
-  }
-  .splash img.fromRight {
-    opacity: 1;
-    right: -10vw;
-    transform: rotateZ(-10deg);
-  }
-  
-  
-  .splash h1 {
-      font-weight: bolder; 
-      color: #3674FF;
-      font-size:calc(2rem + 3vw);
-      text-align: right;
-      font-family: 'Roboto', serif;
-      margin: 0;
-  }
-  
-  .splash h1 span {
-    font-size: calc(2rem + 1vw);
-  }
-  
-  .splash {
-      margin: 5vw 0 0 10vw;
-  }
+  border-radius: 0 0 0 50%;
+  border: 0;
 
+  background-color: white;
+  color: black;
+
+  top: 0;
+  right: 0;
+
+  transition: 0.2s ease-out all;
+
+  font-size: 1rem;
+}
+
+.smallDimensions {
+  width: var(--button-smallDimension);
+  height: var(--button-smallDimension);
+}
+
+.navButtons {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  transition: 0.3s ease-out all;
+
+  margin: 0;
+  padding: 0;
+
+  transform: translate(0%);
+}
+
+.navButtons li:nth-child(n) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(1 / 3) * 100%;
+  width: 100%;
+
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.308);
+
+  letter-spacing: 1px;
+}
+
+.navButtons li a {
+  font-size: clamp(calc(1rem + 1vw + 1vh), calc(1rem + 2vw + 2vh), 6rem);
+}
+
+.navButtons li a span {
+  font-size: calc(1rem + 0.5vw + 0.5vh);
+}
+
+.navButtons li:first-child a {
+  background-color: rgba(253, 135, 255, 1);
+  color: white;
+}
+.navButtons li:nth-child(2) a {
+  background-color: rgba(54, 116, 255, 0.5);
+  color: white;
+}
+.navButtons li:nth-child(3) a {
+  background-color: rgba(191, 242, 155, 1);
+  color: white;
+}
+.navButtons li:nth-child(4) a {
+  background-color: rgba(255, 117, 1, 1);
+  color: white;
+}
+
+.navButtons li:nth-child(n + 3) {
+  width: 50%;
+}
+
+.navButtons li:last-child {
+  width: 50%;
+}
+
+.navButtons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.placeOffScreen {
+  transform: translate(110%);
+}
+
+/* || main */
+
+body {
+  margin: 0 5vw 0 5vw;
+}
+
+/* || about image */
+.splash img {
+  pointer-events: none;
+  filter: grayscale(0.7);
+  display: block;
+  position: fixed;
+  z-index: 0;
+  top: 15%;
+  right: -30vw;
+  width: calc(40vw + 20vh);
+  border-radius: 100%;
+
+  mix-blend-mode: color-dodge;
+
+  transition: all ease-out 0.8s;
+  opacity: 0;
+  transform: rotateZ(10deg);
+}
+.splash img.fromRight {
+  opacity: 1;
+  right: -10vw;
+  transform: rotateZ(-10deg);
+}
+
+.splash h1 {
+  font-weight: bolder;
+  color: #3674ff;
+  font-size: calc(2rem + 3vw);
+  text-align: right;
+  font-family: "Roboto", serif;
+  margin: 0;
+}
+
+.splash h1 span {
+  font-size: calc(2rem + 1vw);
+}
+
+.splash {
+  margin: 5vw 0 0 10vw;
+}
 
 /* || about text */
 
@@ -289,12 +276,11 @@ header a:hover {
   font-size: large;
 }
 
-
 /* element boiler */
 
 .infoBox {
   width: 85%;
-  height:auto;
+  height: auto;
   /* outline: 1px solid green; */
 }
 
@@ -308,7 +294,7 @@ header a:hover {
   height: 15vh;
 
   padding: 0;
-  border:rgb(238, 238, 238) 1px ridge;
+  border: rgb(238, 238, 238) 1px ridge;
   border-radius: 20px;
   margin: 0;
 
@@ -320,7 +306,7 @@ header a:hover {
   border-radius: 50%;
   border: 0;
 
-  transition: .3s all;
+  transition: 0.3s all;
 
   cursor: pointer;
 }
@@ -332,12 +318,9 @@ header a:hover {
   margin: 10px;
 }
 
-
-
 li:hover button {
   background-color: rgb(71, 71, 194);
 }
-
 
 .blurbWrapper {
   margin-top: 1rem;
@@ -360,9 +343,8 @@ li:hover button {
 }
 
 .blurbWrapper p:nth-child(5) {
-  font-size: calc(1rem + .6vw + .6vh);
+  font-size: calc(1rem + 0.6vw + 0.6vh);
 }
-
 
 @media screen and (max-width: 480px) {
   .infoBox {
@@ -378,7 +360,7 @@ li:hover button {
     solution: manually setting height of container to encapsulate even the largest bio prevents page jumping */
   }
 
-  .flexWrapper li:nth-child(n+2) {
+  .flexWrapper li:nth-child(n + 2) {
     display: none;
   }
 
@@ -388,7 +370,7 @@ li:hover button {
 
   nav {
     height: 12vh;
-    transition: .65s all ease-out;
+    transition: 0.65s all ease-out;
   }
 
   main {
@@ -398,7 +380,6 @@ li:hover button {
   .flexWrapper {
     justify-content: center;
     margin: 0;
-
   }
 
   .flexWrapper li:first-child {
@@ -413,39 +394,30 @@ li:hover button {
   }
 
   .flexWrapper li:first-child img {
-    rotate: -45deg
+    rotate: -45deg;
+  }
+}
+
+/* || media queries */
+
+@media screen and (min-width: 480px) {
+  .mobileContainer {
+    display: none;
   }
 
-
-
-
+  body {
+    margin: 0 5vw 0 5vw;
+  }
 }
-
-  /* || media queries */
-  
-  
-
-  @media screen and (min-width: 480px) {
-    .mobileContainer {
-        display: none;
-    }
-
-    body {
-      margin: 0 5vw 0 5vw;
-    }
-}
-
 
 @media screen and (max-width: 480px) {
-
-
-  .flexWrapper li:nth-child(n+2) {
+  .flexWrapper li:nth-child(n + 2) {
     display: none;
   }
 
   nav {
     height: 12vh;
-    transition: .65s all ease-out;
+    transition: 0.65s all ease-out;
   }
 
   main {
@@ -469,19 +441,13 @@ li:hover button {
   }
 
   .flexWrapper li:first-child img {
-    rotate: -45deg
+    rotate: -45deg;
   }
 
   .hero {
-    margin: 25px
+    margin: 25px;
   }
-
-
-
-  
 }
-
-
 
 @media (prefers-reduced-motion) {
   *,
@@ -489,6 +455,4 @@ li:hover button {
   ::after {
     transition: all 0s;
   }
-
-
-  }
+}

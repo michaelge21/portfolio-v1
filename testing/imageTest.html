@@ -1,180 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>image test</title>
-    <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Barlow">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Barlow"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-:root {
-  --inbetween-yellow: rgb(255, 247, 0);
-  --inbetween-blue:rgb(60, 126, 206);
-  --wucypher-white: rgb(255, 255, 255);
-  --wucypher-orange: rgb(242, 152, 73);
-  --leader-white: rgb(238, 238, 238);
-  --leader-green: #97BF7A;
-  --light-fontColor: rgb(22,22,22);
-  --dark-fontColor-header: #FF7501;
-  --dark-fontColor: white;
-  --dark-background: #202020;
-}
+      :root {
+        --inbetween-yellow: rgb(255, 247, 0);
+        --inbetween-blue: rgb(60, 126, 206);
+        --wucypher-white: rgb(255, 255, 255);
+        --wucypher-orange: rgb(242, 152, 73);
+        --leader-white: rgb(238, 238, 238);
+        --leader-green: #97bf7a;
+        --light-fontColor: rgb(22, 22, 22);
+        --dark-fontColor-header: #ff7501;
+        --dark-fontColor: white;
+        --dark-background: #202020;
+      }
 
+      body {
+        background-color: #202020;
+        font-family: "Barlow", serif;
+      }
 
-body {
-    background-color: #202020;
-    font-family: "Barlow", serif;
+      header {
+        position: sticky;
+        top: -1px;
+      }
 
-}
+      .flexWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding-left: 0;
+      }
 
-header {
-    position: sticky;
-    top: -1px;
-  }
+      .flexWrapper li {
+        margin-right: calc(0.1em + 5vw);
+        font-size: calc(0.1em + 1.5vw);
+      }
 
-  .flexWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding-left: 0;
-  }
+      .flexWrapper li:first-child {
+        margin-right: auto;
+      }
 
-  .flexWrapper li {
-    margin-right: calc(.1em + 5vw);
-    font-size: calc(.1em + 1.5vw); 
-  }
+      img {
+        max-width: 100%;
+      }
 
-  .flexWrapper li:first-child {
-    margin-right: auto;
-  }
+      .imgWrapper {
+        width: calc(60px + 2vw);
+        height: calc(60px + 2vw);
+        display: inline-block;
+      }
 
-  img {
-    max-width: 100%;
-    }
+      header a {
+        transition: all 0.3s;
+        text-decoration: overline;
+        text-decoration-thickness: 3px;
+      }
 
-  .imgWrapper {
-    width: calc(60px + 2vw);
-    height: calc(60px + 2vw);
-    display: inline-block;
-  }
+      .flexWrapper li:nth-child(2) a {
+        color: #fd87ff;
+      }
 
-  header a {
-    transition: all 0.3s;
-    text-decoration: overline;
-    text-decoration-thickness: 3px;
-  }
+      .flexWrapper li:nth-child(3) a {
+        color: #3674ff;
+      }
+      .flexWrapper li:nth-child(4) a {
+        color: #bff29b;
+      }
+      .flexWrapper li:nth-child(5) a {
+        color: var(--dark-fontColor-header);
+      }
+      .flexWrapper li:nth-child(5) {
+        margin: 0;
+      }
 
+      .flexWrapper li:nth-child(2) a:hover,
+      .flexWrapper li:nth-child(3) a:hover,
+      .flexWrapper li:nth-child(4) a:hover,
+      .flexWrapper li:nth-child(5) a:hover {
+        color: white;
+      }
 
-  
+      section img {
+        pointer-events: none;
+        filter: grayscale(0.9);
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        top: 50%;
+        right: -22vw;
+        transform: translate3d(0, -30%, 0);
+        width: 60vw;
+        /* aspect-ratio: 1/1; */
+        border-radius: 100%;
 
+        mix-blend-mode: color-dodge;
+      }
 
+      h1,
+      p {
+        font-weight: bolder;
+      }
 
-  .flexWrapper li:nth-child(2) a{
-    color: #FD87FF;
-  }
+      h1 {
+        color: #3674ff;
+        font-size: calc(2rem + 3vw);
+        text-align: right;
+      }
 
-  .flexWrapper li:nth-child(3) a{
-    color: #3674FF;
-  }
-  .flexWrapper li:nth-child(4) a{
-    color: #BFF29B;
-  }
-  .flexWrapper li:nth-child(5) a{
-    color: var(--dark-fontColor-header);
-  }
-  .flexWrapper li:nth-child(5){
-    margin: 0;
-  }
+      p {
+        color: #bff29b;
+        font-size: large;
+      }
 
-
-  .flexWrapper li:nth-child(2) a:hover,
-  .flexWrapper li:nth-child(3) a:hover,
-  .flexWrapper li:nth-child(4) a:hover,
-  .flexWrapper li:nth-child(5) a:hover
-  {
-    color: white;
-  }
-  
-
-  section img {
-    pointer-events: none;
-    filter: grayscale(.9);
-    display: block;
-    position: fixed;
-    z-index: 9999;
-    top: 50%;
-    right: -22vw;
-    transform: translate3d(0,-30%,0);
-    width: 60vw;
-    /* aspect-ratio: 1/1; */
-    border-radius: 100%;
-
-    mix-blend-mode: color-dodge;
-
-}
-
-
-h1, p {
-    font-weight: bolder;
-}
-
-h1 {
-    color: #3674FF;
-    font-size:calc(2rem + 3vw);
-    text-align: right;
-}
-
-p {
-    color: #BFF29B;    
-    font-size:large;
-}
-
-section {
-    margin: 5vw 0 0 10vw;
-}
-
+      section {
+        margin: 5vw 0 0 10vw;
+      }
     </style>
-
-
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="flexWrapper">
-                <li>
-                    <a href="#" class="imgWrapper"><img src="../media/micheal_flowersspl2.png" title="return home" alt="bowl of rice"></a>
-                </li>
-                <li>
-                    <a href="portfolio/portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="about/about.html">About</a>
-                </li>
-                <li>
-                    <a href="https://docs.google.com/document/d/10bAr0fCokUTcffbv_2U1btwTw6TF-AC-ICu8iav1zmU/edit?usp=sharing" target="_blank" title="opens in new tab" alt="link to my full resume on Google Drive">Resume</a>
-                </li>
-                <li>
-                    <a href="mailto:michaelge317@gmail.com">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="flexWrapper">
+          <li>
+            <a href="#" class="imgWrapper"
+              ><img
+                src="../media/micheal_flowersspl2.png"
+                title="return home"
+                alt="bowl of rice"
+            /></a>
+          </li>
+          <li>
+            <a href="portfolio/portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="about/about.html">About</a>
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/10bAr0fCokUTcffbv_2U1btwTw6TF-AC-ICu8iav1zmU/edit?usp=sharing"
+              target="_blank"
+              title="opens in new tab"
+              alt="link to my full resume on Google Drive"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a href="mailto:michaelge317@gmail.com">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section>
-        <h1>more about me!</h1>
-        <img src="../media/betterMichael.jpg" alt="large cover photo of Michael smiling">
+      <h1>more about me!</h1>
+      <img
+        src="../media/betterMichael.jpg"
+        alt="large cover photo of Michael smiling"
+      />
     </section>
 
     <section class="bio">
-        <p>more words that go inside of a paragraph more words that go inside of a paragraph more words that go inside of a paragraph</p>
+      <p>
+        more words that go inside of a paragraph more words that go inside of a
+        paragraph more words that go inside of a paragraph
+      </p>
     </section>
-</body>
+  </body>
 </html>
-

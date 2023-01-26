@@ -6,22 +6,18 @@ const menuButton = document.querySelector(".menuButton");
 const mobileNavMenu = document.querySelector(".navButtons");
 const entireNav = document.querySelector(".mobileContainer");
 
+menuButton.addEventListener("click", (event) => {
+  event.target.textContent == "menu"
+    ? (event.target.textContent = "X")
+    : (event.target.textContent = "menu");
 
-menuButton.addEventListener('click', (event) => {
+  splashImg1.style.opacity == "0"
+    ? (splashImg1.style.opacity = "1")
+    : (splashImg1.style.opacity = "0");
 
-    (event.target.textContent == "menu")
-    ? event.target.textContent = "X"
-    : event.target.textContent = "menu";
+  menuButton.classList.toggle("smallDimensions");
+  mobileNavMenu.classList.toggle("placeOffScreen");
+  bodyE.classList.toggle("noOverflow");
 
-
-    (splashImg1.style.opacity == "0")
-    ? splashImg1.style.opacity = "1"
-    : splashImg1.style.opacity = "0";
-
-    menuButton.classList.toggle("smallDimensions")
-    mobileNavMenu.classList.toggle("placeOffScreen");
-    bodyE.classList.toggle("noOverflow");
-
-    entireNav.classList.toggle("makeMobileWork");
-
+  entireNav.classList.toggle("makeMobileWork");
 });
