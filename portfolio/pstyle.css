@@ -318,11 +318,6 @@ main h1 {
   transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/*
-MUST MAKE EACH OF THESE COLUMNS WORK AS FLEX ITEMS, AND ALSO ENSURE THAT THEY HAVE THE RIGHT HEIGHTS! check schematic that you made for youself
-
-*/
-
 .inbetween .col2 img {
   display: inline-block;
   max-width: 100%;
