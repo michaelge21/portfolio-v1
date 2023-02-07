@@ -1,0 +1,23 @@
+{
+  "name": "v2portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelge21/v2Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelge21/v2Portfolio/issues"
+  },
+  "homepage": "https://github.com/michaelge21/v2Portfolio#readme",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
