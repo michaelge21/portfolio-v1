@@ -279,8 +279,8 @@ main h1 {
   background-color: var(--inbetween-blue);
   color: var(--inbetween-yellow);
 
-  font-size: calc(2vw + 1vh + 0.5rem);
-  padding: 50px;
+  font-size: calc(3vw + 2vh + 0.6rem);
+  padding: 60px;
 }
 
 .inbetween .col1 > p {
@@ -300,7 +300,7 @@ main h1 {
 }
 
 .inbetween .col1 > ul li {
-  font-size: calc(1vw + 0.8vh + 0.1rem);
+  font-size: calc(1vw + 0.8vh + 0.2rem);
 }
 
 .inbetween .col1 div {
@@ -364,6 +364,10 @@ main h1 {
 
 .inbetween .col2 h3 a:visited {
   color: white;
+}
+
+.inbetween .col2 h3 a:hover {
+  color: var(--inbetween-blue);
 }
 
 .inbetween .col2 h3 a:active {
