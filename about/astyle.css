@@ -234,19 +234,20 @@ body {
   position: fixed;
   z-index: 0;
   top: 15%;
-  right: -30vw;
+  right: -60vw;
   width: calc(40vw + 20vh);
   border-radius: 100%;
 
   mix-blend-mode: color-dodge;
 
-  transition: all ease-out 0.8s;
+  transition: transform ease-out 0.8s, right ease-out 0.8s,
+    opacity ease-in-out 1.5s;
   opacity: 0;
-  transform: rotateZ(10deg);
+  transform: rotateZ(20deg);
 }
 .splash img.fromRight {
-  opacity: 1;
-  right: -10vw;
+  opacity: 0.8;
+  right: -18vw;
   transform: rotateZ(-10deg);
 }
 
