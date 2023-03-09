@@ -66,7 +66,6 @@ header {
   font-family: Roboto, serif;
   text-decoration: overline;
   text-decoration-thickness: 3px;
-  transition: all .3s;
 }
 
 header a:link, header a:visited, header a:hover {
@@ -95,107 +94,6 @@ header a:link, header a:visited, header a:hover {
 
 .flexWrapper li:nth-child(2) a:hover, .flexWrapper li:nth-child(3) a:hover, .flexWrapper li:nth-child(4) a:hover, .flexWrapper li:nth-child(5) a:hover {
   color: #fff;
-}
-
-.mobileContainer {
-  height: var(--button-dimension);
-  font-family: Roboto, serif;
-  position: absolute;
-  overflow: hidden;
-}
-
-.noOverflow {
-  overflow: hidden;
-}
-
-.makeMobileWork {
-  height: 100vh;
-}
-
-.menuButton {
-  width: var(--button-dimension);
-  height: var(--button-dimension);
-  color: #000;
-  background-color: #fff;
-  border: 0;
-  border-radius: 0 0 0 50%;
-  font-family: Roboto, serif;
-  font-size: 1rem;
-  transition: all .2s ease-out;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.smallDimensions {
-  width: var(--button-smallDimension);
-  height: var(--button-smallDimension);
-}
-
-.navButtons {
-  height: 100%;
-  flex-wrap: wrap;
-  margin: 0;
-  transition: all .3s ease-out;
-  display: flex;
-  transform: translate(0%);
-}
-
-.navButtons li:nth-child(n) {
-  height: calc(1 / 3) * 100%;
-  width: 100%;
-  letter-spacing: 1px;
-  background-color: #0000004f;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  display: flex;
-}
-
-.navButtons li a {
-  font-size: clamp(1rem + 1vw + 1vh, 1rem + 2vw + 2vh, 6rem);
-}
-
-.navButtons li a span {
-  font-size: calc(1rem + .5vw + .5vh);
-}
-
-.navButtons li:first-child a {
-  color: #fff;
-  background-color: #fd87ffe6;
-}
-
-.navButtons li:nth-child(2) a {
-  color: #fff;
-  background-color: #3674ffe6;
-}
-
-.navButtons li:nth-child(3) a {
-  color: #fff;
-  background-color: #bff29be6;
-}
-
-.navButtons li:nth-child(4) a {
-  color: #fff;
-  background-color: #ff7501e6;
-}
-
-.navButtons li:nth-child(n+3), .navButtons li:last-child {
-  width: 50%;
-}
-
-.navButtons a {
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  display: flex;
-}
-
-.placeOffScreen {
-  transform: translate(110%);
 }
 
 main {

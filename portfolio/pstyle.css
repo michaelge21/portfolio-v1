@@ -238,7 +238,7 @@ header a:hover {
 /* || main */
 
 body {
-  margin: 0 2.5vw 0 2.5vw;
+  margin: 0 5vw;
 }
 
 main h1 {
@@ -279,7 +279,7 @@ main h1 {
   background-color: var(--inbetween-blue);
   color: var(--inbetween-yellow);
 
-  font-size: calc(3vw + 2vh + 0.6rem);
+  font-size: calc(2vw + 2vh + 0.6rem);
   padding: 60px;
 }
 
