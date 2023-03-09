@@ -55,7 +55,6 @@ header a {
   font-family: Roboto, serif;
   text-decoration: overline;
   text-decoration-thickness: 3px;
-  transition: all .3s;
 }
 
 header a:link, header a:visited, header a:hover {
