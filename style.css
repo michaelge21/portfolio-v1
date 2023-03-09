@@ -1,25 +1,3 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-:root {
-  --inbetween-yellow: rgb(255, 247, 0);
-  --inbetween-blue: rgb(60, 126, 206);
-  --wucypher-white: rgb(255, 255, 255);
-  --wucypher-orange: rgb(242, 152, 73);
-  --leader-white: rgb(238, 238, 238);
-  --leader-green: #97bf7a;
-  --light-fontColor: rgb(22, 22, 22);
-  --dark-fontColor-header: #ff7501;
-  --dark-fontColor: white;
-  --dark-background: #202020;
-
-  --button-dimension: 90px;
-  --button-smallDimension: 80px;
-}
 /* || boilerplate */
 
 @font-face {
@@ -116,19 +94,10 @@ main {
   color: var(--dark-fontColor-header);
   font-size: calc(2rem + 3vw);
   margin: 2rem 0;
-  /* grid-area: h; */
 }
 
 .hero p {
   font-size: calc(0.8rem + 1vw);
-}
-
-.hero p:first-child {
-  /* grid-area: p; */
-}
-
-.hero .proud {
-  /* grid-area: o; */
 }
 
 .hero a {
@@ -140,7 +109,6 @@ main {
   list-style: none;
   font-size: calc(1.6rem + 1vw);
   line-height: 5rem;
-  /* grid-area: l; */
 }
 
 .hero li:first-child a {

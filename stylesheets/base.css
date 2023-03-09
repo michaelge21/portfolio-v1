@@ -1,0 +1,23 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --inbetween-yellow: rgb(255, 247, 0);
+  --inbetween-blue: rgb(60, 126, 206);
+  --wucypher-white: rgb(255, 255, 255);
+  --wucypher-orange: rgb(242, 152, 73);
+  --leader-white: rgb(238, 238, 238);
+  --leader-green: #97bf7a;
+  --light-fontColor: rgb(22, 22, 22);
+  --dark-fontColor-header: #ff7501;
+  --dark-fontColor: white;
+  --dark-background: #202020;
+
+  --button-dimension: 90px;
+  --button-smallDimension: 80px;
+}
