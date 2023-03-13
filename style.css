@@ -1,4 +1,10 @@
 /* || boilerplate */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+}
 
 :root {
   --inbetween-yellow: rgb(255, 247, 0);
